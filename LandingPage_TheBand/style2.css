@@ -1,13 +1,43 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 .clear {
     clear: both;
 }
+/* Common */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col_full {
+    width: 100%;
+}
+.col_two {
+    width: 50%;
+}
+.col_third {
+    width: 33.3333333%;
+}
+/* main */
 .header{
     background-color: #000;
     height: 46px;
@@ -116,15 +146,8 @@ html {
     text-align: justify;
     line-height: 1.5;
 }
-.image-section {
-    display: flex;
-}
 .image {
-    display: block;
-    width: 255px;
     padding: 32px 0;
-    width: calc(100%/3);
-    float: flex;
     text-align: center;
 }
 .image p {
@@ -167,16 +190,11 @@ html {
 }
 /* Code buy tickets */
 .places-list {
-    margin: 32px -8px 0 -8px;
+    margin-top: 32px;
     padding-bottom: 32px;
     
 } 
-.place-item {
-    float: left;
-    width: 31.33333333333%;
-    padding: 0 8px;
-}
-.place-item img {
+.places-list img {
     width: 100%;
     display: block;
 }
@@ -195,4 +213,39 @@ html {
     background-color: #000;
     padding: 8px 16px;
     color: #fff
+}
+
+/* Contact */
+.information {
+    font-size: 18px;
+}
+.info {
+    width: 32px;
+    display: inline-block;
+}
+.form-content {
+    font-size: 15px;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    width: 100%;
+}
+.button {
+    float: right;
+    font-size: 15px;
+    padding: 8px 16px;
+    margin-top: 8px;
+}
+
+.a {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+
+}
+
+.footer {
+    text-align: center;
+    padding: 64px 16px;
 }
